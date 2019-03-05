@@ -25,6 +25,7 @@ export default (editor, opts = {}) => {
 	},
 	});
 
+	//component traits
 	domComps.addType('INITIATE_JOB', {
 		model: dModel.extend({
 			defaults: Object.assign({}, dModel.prototype.defaults, {
@@ -53,7 +54,7 @@ export default (editor, opts = {}) => {
 	
 	editor.TraitManager.addType('flowTemplateSelectorButton', {
 		events: {
-			'click': 'selectFlow', // trigger parent onChange method on click
+			'click': 'selectFlow', // trigger parent onclick method on click
 		},
 
 		selectFlow: function () {
