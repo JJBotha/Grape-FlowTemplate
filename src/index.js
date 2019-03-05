@@ -10,6 +10,11 @@ export default (editor, opts = {}) => {
   loadComponents(editor, options);
 
   // Add blocks
+	var blockManager = editor.BlockManager;
+	blockManager.add('my-first-block', {
+	  label: 'Simple block',
+	  content: '<div class="my-block">This is a simple block</div>',
+	});
   loadBlocks(editor, options);
 
   // TODO Remove
