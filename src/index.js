@@ -71,7 +71,7 @@ export default (editor, opts = {}) => {
             button.appendChild(document.createTextNode('Select a flow'));
 			
             return button;
-		//implement - after selection update trait value
+		
 		},
 	});
    
